@@ -8,62 +8,65 @@ prompts the user to input the year and the month (1-12) and prints the number of
 
 
 #include <iostream>
+
 using namespace std;
 
-bool leap(int year)
-{
-  if (year % 4 != 0)
-  cout << false;
-  else if (year % 4 == 0)
-  {
-    if ((year % 100 == 0) && (year % 400 != 0))
-      cout << false;
-    else if ((year % 100 == 0) && (year % 400 == 0))
-      cout << true;
-    else
-      cout << true;
-  }
-  return 0;
-  }
+int main(){
+    int year = 0;
+    int month = 0;
+    cout << "Enter year: ";
+    cin >> year;
+    cout << endl;
+    cout << "Enter Month: ";
+    cin >> month;
+    cout << endl;
 
-int main()
-{
-  int year;
-  cout << "Enter year: " << endl;
-  cin >> year;
-  
-  int month;
-  cout << "Enter month: " << endl;
-  cin >> month;
 
-  if (leap(year))
-{
-  if ((month % 2 != 0) && (month < 8)))
-    cout << "31 Days";
-  else if ((month % 2 == 0) && (month < 8) && month != 2)
-    cout << "30 Days";
-  else if (month == 2)
-    cout << "29 Days";
-  else if (((month % 2 != 0) && (month > 8)))
-    cout << "30 Days";
-  else if ((month % 2 == 0) && (month > 8))
-    cout << "31 Days";
-  
-}
-  else
-  {
-    if ((month % 2 != 0) && (month < 8))
-    cout << "31 Days";
-  else if ((month % 2 == 0) && (month < 8) && month != 2)
-    cout << "30 Days";
-  else if (month == 2)
-    cout << "28 Days";
-  else if (((month % 2 != 0) && (month > 8)))
-    cout << "30 Days";
-  else if ((month % 2 == 0) && (month > 8))
-    cout << "31 Days";
-  }
+    if (month == 1){
+        cout << "31 days" << endl;
+    }
+    if (month == 2){
+        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
+            cout << "29 days" << endl;
+        }
+        else{
+            cout << "28 days" << endl;
 
-  cout << endl;
-  return 0;
+        }
+    }    
+
+    if (month == 3){
+        cout << "31 days" << endl;
+        }
+    if (month == 4){
+        cout << "30 days" << endl;
+
+    }
+    if (month == 5){
+        cout << "31 days" << endl;
+    }
+    if (month == 6) {
+        cout << "30 days" << endl;
+    }
+    if (month == 7){
+        cout << "31 days" << endl;
+        }
+    if (month == 8){
+        cout << "31 days" << endl;
+
+    }
+    if (month == 9){
+        cout << "30 days" << endl;
+    }
+    if (month == 10) {
+        cout << "31 days" << endl;
+    }
+    if (month == 11){
+        cout << "30 days" << endl;
+    }
+    if (month == 12) {
+        cout << "31 days" << endl;
+    }
+
+    return 0;
 }
