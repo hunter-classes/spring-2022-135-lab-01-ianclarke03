@@ -12,12 +12,13 @@ using namespace std;
 int main()
 {
   int a,b;
-  cout << "Input two numbers.";
+  cout << "Enter the first number:";
   cin >> a;
+  cout << "Enter the second number:";
   cin >> b;
 
   if (a > b) {
-    cout << b;
+    cout << "The smaller of the two is " << b;
     }
   else if (b > a) {
     cout << "The smaller of the two is " << a << endl;

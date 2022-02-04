@@ -13,9 +13,12 @@ using namespace std;
 int main()
 {
   int a,b,c;
-  cout << "Input three numbers.";
+  cout << "Input three numbers." << endl;
+  cout << "First number:";
   cin >> a;
+  cout << "Second number:";
   cin >> b;
+  cout << "Third number:";
   cin >> c;
 
   if (a < b)
