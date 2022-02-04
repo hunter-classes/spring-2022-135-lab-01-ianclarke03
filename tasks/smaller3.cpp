@@ -13,20 +13,26 @@ using namespace std;
 int main()
 {
   int a,b,c;
+  cout << "Input three numbers.";
   cin >> a;
   cin >> b;
   cin >> c;
-  
-  switch(a,b,c) {
-    case ((a<b) && (a<c)):
-    cout << "The smaller of the three is " << a;
-    break;
-    case ((b < c) && (b < a)):
-    cout << "The smaller of the three is " << b;
-    break;
-    case ((c < b) && (c < a)):
-    cout << "The lesser of the three is " << c;
-    break;
+
+  if (a < b)
+  {
+    if (a < c)
+      cout << "The smaller of the three is " << a << endl;
+    }
+  else if (b < c)
+  {
+    if (b < a)
+      cout << "The smaller of the three is " << b << endl;
   }
+  else if (c < a)
+  {
+    if (c < b)
+      cout << "The smaller of the three is " << c << endl;
+  }
+  
   return 0;
 }

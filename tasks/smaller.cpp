@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
   int a,b;
-  cout << "Input two numbers";
+  cout << "Input two numbers.";
   cin >> a;
   cin >> b;
 
