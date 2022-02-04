@@ -10,8 +10,6 @@ prompts the user to input the year and the month (1-12) and prints the number of
 #include <iostream>
 using namespace std;
 
-
-
 bool leap(int year)
 {
   if (year % 4 != 0)
@@ -27,8 +25,6 @@ bool leap(int year)
   }
   return 0;
   }
-
-
 
 int main()
 {
@@ -69,7 +65,7 @@ int main()
 }
   else
   {
-    if (month == 1)
+  if (month == 1)
     cout << "31 Days";
   else if (month == 2)
     cout << "28 Days";
